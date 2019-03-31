@@ -60,6 +60,22 @@
 
 ​	https://www.cnblogs.com/bluestorm/p/4899274.html
 
+##### 禁用触控板
+
+​	不知道大家什么感觉，反正我想把触摸板禁用了，因为总是干扰打字。
+
+​	最简单的方法时在setting中直接点选，但我发现在Ubuntu16.04安装gnome-shell后无法使用该方法。因此查到了另一个方法：
+
+​	xinput list   //查到自己的设备id，记住touchpad的对应id
+
+​	xinput disable id   //填刚才的touchpad的对应id
+
+​	这样就完成禁用了，不过每次开机都要重新禁用，而且如果计算机状态不一样，id可能会变。
+
+​	如果不小心禁用了键盘，只要重启电脑就好了。
+
+​	xinput enable id  //这样可以重启被禁用的设备
+
 ##### 设置win10和Ubuntu的启动顺序
 
 ​	在上面那个链接中也有：https://www.cnblogs.com/bluestorm/p/4899274.html
@@ -70,7 +86,7 @@
 
 ​	https://blog.csdn.net/hanjushi2/article/details/82184397
 
-​	第二个链接更全，但是我自己安装foxmail没有成功。
+​	第二个链接更全，但是我自己安装foxmail在Ubuntu16.04下找不到，只有安装了gnome-shell桌面后才能找到。
 
 ##### 桌面美化
 
@@ -85,7 +101,11 @@
 
 ​	另外，桌面可以设置各种各样的主题、图标、背景等，背景只需要右键更改就行了，Ubuntu18.04还可以分别设置锁屏界面背景和桌面背景。
 
-​	主题和图标由一个很好的下载网址：
+​	grub界面也可以修改主题：
+
+​	https://blog.csdn.net/w84963568/article/details/78884003
+
+​	主题和图标有一个很好的下载网址，里面也有grub主题：
 
 ​	https://www.gnome-look.org/browse/ord/top/
 
