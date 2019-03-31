@@ -105,6 +105,14 @@
 
 ​	https://blog.csdn.net/w84963568/article/details/78884003
 
+​	去掉开机界面的紫色：（这里改成黑色）
+
+​	https://blog.csdn.net/clearcell/article/details/71275886
+
+​	另一个链接方法更多但我没成功：
+
+​	https://blog.csdn.net/mutilcam_prince/article/details/78289664
+
 ​	主题和图标有一个很好的下载网址，里面也有grub主题：
 
 ​	https://www.gnome-look.org/browse/ord/top/
