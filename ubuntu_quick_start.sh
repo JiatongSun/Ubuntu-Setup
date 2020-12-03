@@ -54,7 +54,8 @@ sudo apt-get install fcitx-table -y
 
 # Install WeChat
 git clone "https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu.git"
-sudo deepin-wine-for-ubuntu/install.sh
+sudo deepin-wine-for-ubuntu/install.sh -y
+wget -qO- https://deepin-wine.i-m.dev/setup.sh | sudo sh
 sudo apt-get install deepin.com.wechat -y
 
 
