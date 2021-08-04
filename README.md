@@ -70,7 +70,7 @@
 
 ##### Recommended Extension: 
 
-##### Arc menu; Dash to panel; Desktop icons; Extensions; Good bye gdm3 login screen; Noannoyance; Openweather; Refresh wifi connections; Topicons plus; User themes; Workspaces to dock.
+##### Arc menu; Dash to panel; Desktop icons; Extensions; Good bye gdm3 login screen; Noannoyance; Openweather; Refresh wifi connections; **Disconnect Wifi**; Topicons plus; User themes; Workspaces to dock.
 
 ##### (4) Install Themes: Download themes from <https://www.gnome-look.org/browse/ord/top/>
 
