@@ -10,11 +10,11 @@ sudo apt-get dist-upgrade -y
 sudo apt install curl -y
 
 # Install Zsh
-sudo apt install zsh -y
+# sudo apt install zsh -y
 # chsh -s /usr/bin/zsh  # Change bash to zsh
 
 # Install Oh-My-Zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Configure Time
 timedatectl set-local-rtc 1 --adjust-system-clock
@@ -38,12 +38,12 @@ sudo apt install chrome-gnome-shell -y
 
 # Install Git
 sudo apt install git -y
-git clone https://github.com/JiatongSun/Ubuntu-Setup.git
+# git clone https://github.com/JiatongSun/Ubuntu-Setup.git
 
 # Add Themes and Background
-sudo cp -r Ubuntu-Setup/Themes/GTK/* /usr/share/themes/
-sudo cp -r Ubuntu-Setup/Themes/Icon/* /usr/share/icons/
-sudo cp Ubuntu-Setup/Background/* /usr/share/backgrounds/
+sudo cp -r Themes/GTK/* /usr/share/themes/
+sudo cp -r Themes/Icon/* /usr/share/icons/
+sudo cp Background/* /usr/share/backgrounds/
 
 # Install Flameshot
 sudo apt install flameshot -y
@@ -57,15 +57,15 @@ pip3 install --upgrade pip
 pip3 install numpy scipy pandas matplotlib
 
 # Install Sogou Pinyin (Please download sogou from https://pinyin.sogou.com/linux/)
-sudo apt install fcitx-bin -y
-sudo apt-get install fcitx-table -y
+# sudo apt install fcitx-bin -y
+# sudo apt-get install fcitx-table -y
 # sudo dpkg -i sogoupinyin*.deb # Install Sogou Pinyin
 
 # Install WeChat
-git clone "https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu.git"
-sudo deepin-wine-for-ubuntu/install.sh -y
-wget -qO- https://deepin-wine.i-m.dev/setup.sh | sudo sh
-sudo apt-get install com.qq.weixin.deepin -y 
+# git clone "https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu.git"
+# sudo deepin-wine-for-ubuntu/install.sh -y
+# wget -qO- https://deepin-wine.i-m.dev/setup.sh | sudo sh
+# sudo apt-get install com.qq.weixin.deepin -y 
 
 # Install Typora
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
@@ -83,9 +83,6 @@ sudo apt-get install sublime-text -y
 # Install Atom
 sudo snap install atom --classic
 
-# Install Pycharm
-sudo snap install pycharm-community --classic
-
 # Install Clion
 sudo snap install clion --classic
 
@@ -94,15 +91,3 @@ sudo apt-get install terminator -y
 
 # Install Guake
 sudo apt-get install guake -y
-
-# ROS
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
-sudo apt update
-sudo apt install ros-noetic-desktop-full -y
-source /opt/ros/noetic/setup.zsh
-echo "source /opt/ros/noetic/setup.zsh" >> ~/.bashrc
-source ~/.bashrc
-sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential -y
-sudo rosdep init
-rosdep update
